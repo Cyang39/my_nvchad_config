@@ -56,4 +56,18 @@ M.nvimtree = {
   },
 }
 
+M.copilot = {
+  -- Possible configurable fields can be found on:
+  -- https://github.com/zbirenbaum/copilot.lua#setup-and-configuration
+  suggestion = {
+    auto_trigger = true,
+    keymap = {
+      accept = "<M-,>",
+      next = "<M-o>",
+      prev = "<M-p>",
+      dismiss = "<M-.>",
+    }
+  },
+}
+
 return M
