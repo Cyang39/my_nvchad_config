@@ -10,6 +10,7 @@ M.treesitter = {
     "typescript",
     "tsx",
     "c",
+    "rust",
     "markdown",
     "markdown_inline",
   },
@@ -37,6 +38,9 @@ M.mason = {
     -- c/cpp stuff
     "clangd",
     "clang-format",
+
+    -- rust stuff
+    "rust-analyzer",
   },
 }
 
@@ -60,6 +64,7 @@ M.copilot = {
   -- Possible configurable fields can be found on:
   -- https://github.com/zbirenbaum/copilot.lua#setup-and-configuration
   suggestion = {
+    enabled = true,
     auto_trigger = true,
     keymap = {
       accept = "<M-,>",
@@ -68,6 +73,9 @@ M.copilot = {
       dismiss = "<M-.>",
     }
   },
+  filetypes = {
+    gitcommit = false,
+  }
 }
 
 return M
