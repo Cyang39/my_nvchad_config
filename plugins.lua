@@ -55,6 +55,10 @@ local plugins = {
     opts = overrides.copilot,
   },
 
+  {
+    "simrat39/rust-tools.nvim",
+  },
+
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",
