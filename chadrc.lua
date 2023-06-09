@@ -11,6 +11,11 @@ M.ui = {
 
   hl_override = highlights.override,
   hl_add = highlights.add,
+
+  tabufline = {
+    -- 始终显示 buffer tabs
+    lazyload = false,
+  }
 }
 
 M.plugins = "custom.plugins"

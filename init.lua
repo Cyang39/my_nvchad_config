@@ -1,6 +1,7 @@
 -- 解决 Windows 上的 Bug：
 -- https://stackoverflow.com/questions/74389900
 vim.o.shellcmdflag="-c"
+vim.opt.scrolloff = 8
 
 -- local autocmd = vim.api.nvim_create_autocmd
 
