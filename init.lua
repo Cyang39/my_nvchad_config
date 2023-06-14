@@ -4,8 +4,8 @@ vim.o.shellcmdflag="-c"
 vim.opt.scrolloff = 8
 
 -- 显示空格
-vim.opt.list=true
-vim.opt.listchars:append "space:⋅"
+-- vim.opt.list=true
+-- vim.opt.listchars:append "space:⋅"
 -- local autocmd = vim.api.nvim_create_autocmd
 
 -- Auto resize panes when resizing nvim window

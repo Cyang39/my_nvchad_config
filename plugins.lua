@@ -71,16 +71,18 @@ local plugins = {
   },
 
   -- 设置缩进线和空格的显示
-  {
-    "lukas-reineke/indent-blankline.nvim",
-    config = function()
-      require("indent_blankline").setup {
-        space_char_blankline = " ",
-        show_current_context = true,
-        show_current_context_start = true,
-      }
-    end
-  },
+  -- 这个插件起始 nvchad 默认已经启用了
+  -- 而且用了一段时间后，感觉还是 nvchad 默认的配置效果更好
+  -- {
+  --   "lukas-reineke/indent-blankline.nvim",
+  --   config = function()
+  --     require("indent_blankline").setup {
+  --       space_char_blankline = " ",
+  --       show_current_context = true,
+  --       show_current_context_start = true,
+  --     }
+  --   end
+  -- },
 
   -- To make a plugin not be loaded
   -- {
