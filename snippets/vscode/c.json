@@ -1,0 +1,34 @@
+{
+ "start c code": {
+  "prefix": "new",
+  "body": [
+   "#include <head.h>\n",
+
+   "int main(int argc,const char * argv[])",
+   "{",
+   "\t$0",
+   "\treturn 0;",
+   "}"
+  ]
+ },
+ "start kernel code": {
+  "prefix": "create",
+  "body": [
+   "#include <linux/init.h>",
+   "#include <linux/module.h>\n",
+
+   "static int __init mycdev_init(void)",
+   "{",
+   "\t$0",
+   "\treturn 0;",
+   "}",
+   "static void __exit mycdev_exit(void)",
+   "{",
+   "\n", 
+   "}",
+   "module_init(mycdev_init);",
+   "module_exit(mycdev_exit);",
+   "MODULE_LICENSE(\"GPL\");"
+  ]
+ }
+}

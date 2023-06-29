@@ -6,6 +6,8 @@ vim.opt.scrolloff = 8
 -- 关闭在注释行中换行时自动插入注释符号
 vim.api.nvim_command('autocmd FileType * setlocal formatoptions-=cro')
 
+vim.g.vscode_snippets_path = vim.fn.stdpath "config" .. "/lua/custom/snippets/vscode/"
+
 -- 显示空格
 -- vim.opt.list=true
 -- vim.opt.listchars:append "space:⋅"

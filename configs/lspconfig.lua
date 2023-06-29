@@ -15,6 +15,7 @@ local servers = {
   "rust_analyzer",
   "asm_lsp",
   "cmake",
+  "marksman",
 }
 
 for _, lsp in ipairs(servers) do
