@@ -2,6 +2,8 @@
 -- https://stackoverflow.com/questions/74389900
 vim.o.shellcmdflag="-c"
 vim.opt.scrolloff = 8
+-- 关闭自动换行
+vim.o.wrap = false
 
 -- 关闭在注释行中换行时自动插入注释符号
 vim.api.nvim_command('autocmd FileType * setlocal formatoptions-=cro')
