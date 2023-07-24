@@ -11,9 +11,12 @@ vim.api.nvim_command('autocmd FileType * setlocal formatoptions-=cro')
 vim.g.vscode_snippets_path = vim.fn.stdpath "config" .. "/lua/custom/snippets/vscode/"
 
 -- 显示空格
--- vim.opt.list=true
--- vim.opt.listchars:append "space:⋅"
+vim.opt.list=true
+vim.opt.listchars:append "space:⋅"
 -- local autocmd = vim.api.nvim_create_autocmd
+
+-- 关闭 codeium 默认的按键绑定
+vim.g.codeium_disable_bindings = 1
 
 -- Auto resize panes when resizing nvim window
 -- autocmd("VimResized", {

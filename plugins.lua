@@ -47,12 +47,25 @@ local plugins = {
     end,
   },
 
+  -- {
+  --   "zbirenbaum/copilot.lua",
+  --   -- lazy = false,
+  --   cmd = "Copilot",
+  --   event = "InsertEnter",
+  --   opts = overrides.copilot,
+  -- },
+
   {
-    "zbirenbaum/copilot.lua",
-    -- lazy = false,
-    cmd = "Copilot",
+    "Exafunction/codeium.vim",
+    cmd = "Codeium",
     event = "InsertEnter",
-    opts = overrides.copilot,
+    config = function ()
+      -- Change '<C-g>' here to any keycode you like.
+      vim.keymap.set('i', '<M-,>', function () return vim.fn['codeium#Accept']() end, { expr = true })
+      vim.keymap.set('i', '<M-o>', function() return vim.fn['codeium#CycleCompletions'](1) end, { expr = true })
+      vim.keymap.set('i', '<M-p>', function() return vim.fn['codeium#CycleCompletions'](-1) end, { expr = true })
+      vim.keymap.set('i', '<M-.>', function() return vim.fn['codeium#Clear']() end, { expr = true })
+    end
   },
 
   {
