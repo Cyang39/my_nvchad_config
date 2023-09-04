@@ -5,6 +5,15 @@ vim.opt.scrolloff = 8
 -- 关闭自动换行
 vim.o.wrap = false
 
+-- 设置文件编码
+vim.opt.fileencodings = { "utf-8", "gb2312", "gbk", "gb18030" }
+
+-- 设置终端编码
+vim.opt.termencoding = "encoding"
+
+-- 设置当前缓冲区编码
+-- vim.opt.encoding = "prc"
+
 -- 关闭在注释行中换行时自动插入注释符号
 vim.api.nvim_command('autocmd FileType * setlocal formatoptions-=cro')
 
